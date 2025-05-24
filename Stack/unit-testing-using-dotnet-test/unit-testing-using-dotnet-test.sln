@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackService", "StackService\StackService.csproj", "{E72AE57F-E462-4358-85C6-DBFB6102D809}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackService.Tests", "StackService.Tests\StackService.Tests.csproj", "{61D6120F-47D5-40C0-8BD0-B5295E1C370E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E72AE57F-E462-4358-85C6-DBFB6102D809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72AE57F-E462-4358-85C6-DBFB6102D809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72AE57F-E462-4358-85C6-DBFB6102D809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72AE57F-E462-4358-85C6-DBFB6102D809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D6120F-47D5-40C0-8BD0-B5295E1C370E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D6120F-47D5-40C0-8BD0-B5295E1C370E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D6120F-47D5-40C0-8BD0-B5295E1C370E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D6120F-47D5-40C0-8BD0-B5295E1C370E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
