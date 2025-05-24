@@ -43,9 +43,9 @@ public class StackTest
   [Fact]
   public void AfterOnePushAndOnePop_StackWillBeEmpty()
   {
-    // given an empty stack
+    // given a stack with only 1 element
     
-    // when adding something and removing it 
+    // when removing it
     stack.Push(1);
     stack.Pop();
     
@@ -56,9 +56,9 @@ public class StackTest
   [Fact]
   public void AfterTwoPushAndOnePop_StackWillBeNotEmpty()
   {
-    // given an empty stack
+    // given a stack with 2 elements
     
-    // when adding two elements on stack and remove one
+    // when removing only one 
     stack.Push(1);
     stack.Push(1);
     stack.Pop();
