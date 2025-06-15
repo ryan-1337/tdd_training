@@ -1,12 +1,12 @@
 package com.example;
 
-/**
- * Hello world!
- *
- */
 public class Thermometre
 {
-    public int Generate() {
-        return 0;
+    public int Generate(int[] array) {
+        if (array.length == 0 || array.length > 10000) {
+            return 0;
+        }
+
+        return 1;
     }
 }
