@@ -32,4 +32,9 @@ public class FizzBuzz
 
         return response;
     }
+    
+    public static double SumArray(double[] array)
+    {
+        return array.Sum();
+    }
 }
