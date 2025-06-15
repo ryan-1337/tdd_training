@@ -1,6 +1,6 @@
 package com.example;
 
-public class Thermometre
+public class Thermometer
 {
     public int Generate(int[] array) {
         if (array.length == 0 || array.length > 10000) {

@@ -2,16 +2,12 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class ThermometreTest {
+public class ThermometerTest {
 
-    private final Thermometre thermometre = new Thermometre();
+    private final Thermometer thermometre = new Thermometer();
 
     @Test
     void Should_ReturnZero_When_thermometre_is_null_or_empty() {
