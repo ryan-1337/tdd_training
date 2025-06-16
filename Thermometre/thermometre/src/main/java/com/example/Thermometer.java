@@ -7,6 +7,14 @@ public class Thermometer
             return 0;
         }
 
-        return 1;
+        int temperatureClosestToZero = array[0];
+
+        for (int temperature : array) {
+            if(Math.abs(temperature) < Math.abs(temperatureClosestToZero)) {
+                temperatureClosestToZero = temperature;
+            }
+        }
+
+        return temperatureClosestToZero;
     }
 }
