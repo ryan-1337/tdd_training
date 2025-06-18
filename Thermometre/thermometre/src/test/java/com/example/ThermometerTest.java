@@ -12,7 +12,7 @@ public class ThermometerTest {
         //given an empty array of int
         int[] values = new int[0];
 
-        //when the thermometre equal 0
+        //when the thermometer equal 0
 
         //then should return 0
         assertEquals(0, thermometre.Generate(new int[0]));
@@ -23,7 +23,7 @@ public class ThermometerTest {
         //given an array of int with 10001 values
         int[] values = new int[10001];
 
-        //when the thermometre values is more than 10000
+        //when the thermometer values is more than 10000
         for (int i = 0; i < 10001; i++) {
             values[i] = i++;
         }
@@ -47,8 +47,8 @@ public class ThermometerTest {
 
     @Test
     void Should_Return_the_value_closest_to_zero() {
-        //given an array with two values
-        int[] values = {4,6, 5, 3, -3};
+        //given an array with 4 values
+        int[] values = {4,6, 5, 3};
 
         //when the thermometer have a good values
         int response = thermometre.Generate(values);
@@ -57,4 +57,27 @@ public class ThermometerTest {
         assertEquals(3, response);
     }
 
+    @Test
+    void Should_Return_the_positive_value_closest_to_zero_When_value_are_same_positive_and_negative() {
+        //given an array with four values with same negative and positive values
+        int[] values = {2, 9, -2, -3};
+
+        //when the thermometer have a good values
+        int response = thermometre.Generate(values);
+
+        //then should return the closest value positive
+        assertEquals(2, response);
+    }
+
+    @Test
+    void Should_Return_the_positive_value_closest_to_zero_When_value_are_same() {
+        //given an array with two values
+        int[] values = {-5, 5};
+
+        //when the thermometer have a good values
+        int response = thermometre.Generate(values);
+
+        //then should return the closest value positive
+        assertEquals(5, response);
+    }
 }

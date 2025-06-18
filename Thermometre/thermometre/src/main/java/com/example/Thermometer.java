@@ -12,6 +12,8 @@ public class Thermometer
         for (int temperature : array) {
             if(Math.abs(temperature) < Math.abs(temperatureClosestToZero)) {
                 temperatureClosestToZero = temperature;
+            } else if (temperature > 0 && temperature <= Math.abs(temperatureClosestToZero)) {
+               temperatureClosestToZero = temperature;
             }
         }
 
